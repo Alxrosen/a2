@@ -1,0 +1,29 @@
+[project]
+name = "a2"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Alex Rosen", email = "amr2408@columbia.edu" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "datasets>=5.1.0",
+    "ipykernel>=7.4.0",
+    "ipywidgets>=8.1.9",
+    "nbconvert>=7.17.1",
+    "pygtrie>=2.6.2",
+    "tensorboard>=2.21.0",
+    "torch>=2.14.1",
+]
+
+[project.scripts]
+a2 = "a2:main"
+
+[build-system]
+requires = ["uv_build>=0.13.0,<0.14.0"]
+build-backend = "uv_build"
+
+[tool.uv]
+package = false
+
